@@ -20,6 +20,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
+const port = process.env.PORT || 3001;
 app.listen(process.env.PORT, () => {
   console.log(`I'm listening on port ${process.env.PORT}`);
 });
